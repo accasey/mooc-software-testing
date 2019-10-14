@@ -33,4 +33,11 @@ public class RomanNumeralTest {
         int result = roman.convert("XLIV");
         Assertions.assertEquals(44, result);
     }
+
+    @Test
+    public void currentYear() {
+        RomanNumeral roman = new RomanNumeral();
+        int result = roman.convert("MMXIX");
+        Assertions.assertEquals(2019, result);
+    }
 }
